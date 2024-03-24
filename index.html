@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+  <!-- Entire bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div id="left">
+      <span class="main-text">
+        Dhruvi Infinity Inspiration
+        <br/>
+        DII
+      </span>
+    </div>
+    <div class="hideMe">
+      <!-- <h1>
+        Vertical full-screen slider (GSAP 3)
+        <span>mousewheel, nav dot, drag/throw &amp; arrow controls</span>
+      </h1> -->
+      <div class="navDotInfo">
+        <a href="https://github.com/msypniewski511">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/MSypniewski511">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/maciej-sypniewski-b920a3156/">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/maciej.sypniewski.923">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.dhruvisass.co.uk/">
+          <i class="fa-solid fa-infinity fa-2x"></i>
+        </a>
+        
+      </div>
+      <!-- <p class="navDotInfo">The nav dots also have hover tooltips.</p> -->
+      <svg
+        id="downArrow"
+        class="arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+      >
+        <g stroke-linejoin="round" stroke-linecap="round">
+          <circle r="46" cx="50" cy="50" />
+          <polyline points="25 40, 50 70, 75 40"></polyline>
+        </g>
+      </svg>
+      <svg
+        id="upArrow"
+        class="arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+      >
+        <g stroke-linejoin="round" stroke-linecap="round">
+          <circle r="46" cx="50" cy="50" />
+          <polyline points="25 60, 50 30, 75 60"></polyline>
+        </g>
+      </svg>
+      <div id="masterWrap">
+        <div id="panelWrap">
+          <section class="main">
+            <div class="left-space">
+            </div>
+            <div class="main-container">
+              <video autoplay loop width="100%" class="background-video">
+                <source src="/img/infinity.mp4" type="video/mp4" />
+              </video>
+              <div class="content">
+                <div class="main-text">
+                  Software created through 
+                  <br/>
+                  inspiration for a better future.
+                </div>
+                <div class="subtext">
+                  <a href="http://msyp.co.uk/">msyp</a>
+                  <a href="https://www.dhruvisass.co.uk/">CRM Trener DII</a>
+                  <a href="https://msyp-exercises.netlify.app/">msyp-exercises</a>
+                  <a href="https://voluble-mooncake-56de4b.netlify.app/">Youtube Clone</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="main-container">
+              <div class="product-content">
+                <div class="product-description p-1">
+                  Max out your profitability with the all-in-one software platform created just for fitness businesses like yours. Set a new PR with your fitness business today.
+                </div>
+                <div class="p-1">
+                  <img src="/img/DPTrener.png" alt="" class="product-image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="main-container">
+              <div class="product-content">
+                <div class="product-description p-1">
+                  Max out your profitability with the all-in-one software platform created just for fitness businesses like yours. Set a new PR with your fitness business today.
+                </div>
+                <div class="p-1">
+                  <img src="https://github.com/msypniewski511/portfolio/blob/master/dist/img/projects/Kazam_screenshot_00004.png?raw=true" alt="" class="product-image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="main-container">
+              <div class="product-content">
+                <div class="product-description p-1">
+                  Max out your profitability with the all-in-one software platform created just for fitness businesses like yours. Set a new PR with your fitness business today.
+                </div>
+                <div class="p-1">
+                  <img src="https://github.com/msypniewski511/portfolio/blob/master/dist/img/projects/Kazam_screenshot_00000.png?raw=true" alt="" class="product-image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="main-container">
+              <div class="product-content">
+                <div class="product-description p-1">
+                  Max out your profitability with the all-in-one software platform created just for fitness businesses like yours. Set a new PR with your fitness business today.
+                </div>
+                <div class="p-1">
+                  <img src="https://github.com/msypniewski511/portfolio/blob/master/dist/img/projects/Kazam_screenshot_00008.png?raw=true" alt="" class="product-image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section6">
+            <div class="main-container">
+              <div class="product-content">
+                <div class="product-description p-1">
+                  Max out your profitability with the all-in-one software platform created just for fitness businesses like yours. Set a new PR with your fitness business today.
+                </div>
+                <div class="p-1">
+                  <img src="https://github.com/msypniewski511/portfolio/blob/master/dist/img/projects/Kazam_screenshot_00006.png?raw=true" alt="" class="product-image">
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="dots"></div>
+      <div class="toolTips">
+        <div class="toolTip">Home</div>
+        <div class="toolTip">CRM Dhruvi PT</div>
+        <div class="toolTip">Portfolio 1</div>
+        <div class="toolTip">Portfolio 2</div>
+        <div class="toolTip">Exercises Base</div>
+        <div class="toolTip">Videos</div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
